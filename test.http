@@ -1,0 +1,8 @@
+### No redirect query param
+GET http://localhost:8080/?user=test&admin=no
+
+### Redirect query param = true
+GET http://localhost:8080/?redirect=true&user=test&admin=no
+
+### Redirect query param = false
+GET http://localhost:8080/?redirect=false&user=test&admin=no
