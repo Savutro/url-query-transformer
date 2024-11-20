@@ -10,7 +10,7 @@ import (
 
 func HandleRequest(w http.ResponseWriter, r *http.Request) {
 
-	queryParams := util.ParseQueryParams(r.URL.Query())
+	queryParams := util.ParseQueryParams(r.URL.Query()) // TODO add Error check
 
 	if queryParams["redirect"] == "true" {
 		newURL := util.TransformParams(queryParams)

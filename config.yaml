@@ -1,0 +1,16 @@
+inbound_request:
+  structure:
+    query_params:
+      - name: name1
+      - name: name2
+      - name: name3
+
+outbound_request:
+  structure:
+    query_params:
+      - name: name1
+      - name: name2
+      - name: name3
+    overwrites:
+      - name: name3
+        value: value_n3 # if entry contains value -> overwrite value
